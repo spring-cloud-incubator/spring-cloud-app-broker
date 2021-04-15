@@ -3,7 +3,7 @@ platform: linux
 image_resource:
   type: registry-image
   source:
-    repository: ((docker-hub-organization))/release-ci-image
+    repository: ((dockerhub-mirror-registry))/((dockerhub-organization))/release-ci-image
     tag: ((release-image-tag))
 inputs:
   - name: git-repo
